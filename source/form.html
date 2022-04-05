@@ -32,14 +32,15 @@
     </nav>
   </header>
   <main class="form">
-    <div class="form_introduce introduce">
+    <h1 class="visually-hidden">Оставьте отзыв о Путешествии</h1>
+    <div class="form__introduce introduce">
       <img class="introduce__logo" src="/source/img/intro/sedona.svg" width="229" height="39" alt="Sedona">
     </div>
     <div class="form__introduction introduction">
       <h2 class="introduction__title">Оставьте свой отзыв</h2>
       <p class="introduction__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </div>
-    <form class="form_feedback feedback">
+    <form class="form__feedback feedback">
       <fieldset class="feedback__full-name full-name">
         <legend class="full-name__title">Представьтесь:</legend>
         <label class="full-name__name">Имя<input type="text" placeholder="Пётр" required></label>
@@ -103,11 +104,11 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="feedback__comment">
+      <fieldset class="feedback__comment comment">
         <legend class="comment__title">Опишите свои эмоции:</legend>
         <textarea class="comment__area" name="comment">Опишите подробно все свои восторги </textarea>
       </fieldset>
-      <input class="feedvack__send" type="submit" value="Отправить отзыв">
+      <input class="feedback__send" type="submit" value="Отправить отзыв">
       <p>*-обязательные поля</p>
     </form>
   </main>
