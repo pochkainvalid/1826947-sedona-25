@@ -6,7 +6,11 @@
 </head>
 <body>
   <header class="main-header">
-    <img class="main-header__logo" src="/source/img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны">
+    <div class="main-header__go-index go-index">
+      <a class="go-index__link" href="/source/index.html">
+        <img class="go-index__logo" src="/source/img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны">
+      </a>
+    </div>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -16,16 +20,16 @@
           <li class="site-list__item site-list__item">
             <a class="site-list__link" href="/source/index.html">Главная</a>
           </li>
-          <li class="site-list__item--current">
+          <li class="site-list__item site-list__item--current">
             <a class="site-list__link" href="">Фото и видео</a>
           </li>
         </ul>
         <ul class="main-nav__list feedback-list">
           <li class="feedback-list__item">
-            <a class="feedback-list__link"  href="/source/form.html">Форма отзыва</a>
+            <a class="feedback-list__link" href="/source/form.html">Форма отзыва</a>
           </li>
           <li class="feedback-list__item">
-            <a class="feedback-list__link"  href="https://htmlacademy.ru">HTML Academy</a>
+            <a class="feedback-list__link" href="https://htmlacademy.ru">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -40,49 +44,55 @@
       <h2 class="introduction__title">Фото и видео</h2>
       <p class="introduction__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.></p>
     </div>
-    <ul class="catalog__photoes photoes">
-      <li class="photoes__item">
-        <img class="photoes__photo" src="/source/img/photo-catalog/not-native-spaces.jpg" width="280" height="280" alt="">
-        <h3 class="photoes__title">Неродные просторы</h3>
-        <p class="photoes__autor">Автор фото:Борис</p>
-        <p class="photoes__like">1350</p>
+    <ul class="catalog__photos photos">
+      <li class="photos__item">
+        <img class="photos__photo" src="/source/img/photo-catalog/not-native-spaces.jpg" width="280" height="280" alt="">
+        <h3 class="photos__title">Неродные просторы</h3>
+        <p class="photos__author">Автор фото:Борис</p>
+        <button class="photos__like" type="button">1350</button>
       </li>
-      <li class="photoes__item">
-        <img class="photoes__photo" src="/source/img/photo-catalog/local-vegetation.jpg" width="280" height="280" alt="">
-        <h3 class="photoes__title">Местная растительность</h3>
-        <p class="photoes__autor">Автор фото:Сергей</p>
-        <p class="photoes__like">143</p>
+      <li class="photos__item">
+        <img class="photos__photo" src="/source/img/photo-catalog/local-vegetation.jpg" width="280" height="280" alt="">
+        <h3 class="photos__title">Местная растительность</h3>
+        <p class="photos__author">Автор фото:Сергей</p>
+        <button class="photos__like" type="button">143</button>
       </li>
-      <li class="photoes__item">
-        <img class="photoes__photo" src="/source/img/photo-catalog/road-to-north.jpg" width="280" height="280" alt="">
-        <h3 class="photoes__title">Дорога на север</h3>
-        <p class="photoes__autor">Автор фото:Петр</p>
-        <p class="photoes__like">96</p>
+      <li class="photos__item">
+        <img class="photos__photo" src="/source/img/photo-catalog/road-to-north.jpg" width="280" height="280" alt="">
+        <h3 class="photos__title">Дорога на север</h3>
+        <p class="photos__author">Автор фото:Петр</p>
+        <button class="photos__like" type="button">96</button>
       </li>
-      <li class="photoes__item">
-        <img class="photoes__photo" src="/source/img/photo-catalog/devil-bridge.jpg" width="280" height="280" alt="">
-        <h3 class="photoes__title">Мост Дьявола</h3>
-        <p class="photoes__autor">Автор фото:Антон</p>
-        <p class="photoes__like">254</p>
+      <li class="photos__item">
+        <img class="photos__photo" src="/source/img/photo-catalog/devil-bridge.jpg" width="280" height="280" alt="">
+        <h3 class="photos__title">Мост Дьявола</h3>
+        <p class="photos__author">Автор фото:Антон</p>
+        <button class="photos__like" type="button">254</button>
       </li>
     </ul>
     <div class="catalog__conviction conviction">
       <h2 class="conviction__title">Все еще сомневаетесь?</h2>
       <p class="conviction__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подоражали в очередной раз!</p>
-      <video class="conbiction__video" width="280" height="177" poster="/source/img/video-preview.jpg"></video>
+      <video class="conviction__video" width="280" height="177" poster="/source/img/video-preview.jpg"></video>
     </div>
   </main>
   <footer class="footer">
     <p class="footer__hashtag">#visitSEDONA</p>
     <ul class="footer__social social">
       <li class="social__item">
-        <a class="social__link--vkontakte" href=""></a>
+        <a class="social__link social__link--vkontakte" href="">
+          <span class="visually-hidden social__description">Vkontakte</span>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link--telegram" href=""></a>
+        <a class="social__link social__link--telegram" href="">
+          <span class="visually-hidden social__description">Telegram</span>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link--youtube" href=""></a>
+        <a class="social__link social__link--youtube" href="">
+          <span class="visually-hidden social__description">YouTube</span>
+        </a>
       </li>
     </ul>
     <div class="copyright">
@@ -91,6 +101,5 @@
       <img class="copyright__logo" src="/source/img/htmlacademy.svg" width="27" height="35" alt="логотип HTML Academy">
     </div>
   </footer>
-
 </body>
 </html>

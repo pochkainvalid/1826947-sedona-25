@@ -6,7 +6,11 @@
 </head>
 <body>
   <header class="main-header">
-    <img class="main-header__logo" src="/source/img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны">
+    <div class="main-header__go-index go-index">
+      <a class="go-index__link" href="/source/index.html">
+        <img class="go-index__logo" src="/source/img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны">
+      </a>
+    </div>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -21,38 +25,38 @@
           </li>
         </ul>
         <ul class="main-nav__list feedback-list">
-          <li class="feedback-list__item--current">
-            <a class="feedback-list__link"  href="">Форма отзыва</a>
+          <li class="feedback-list__item feedback-list__item--current">
+            <a class="feedback-list__link" href="">Форма отзыва</a>
           </li>
           <li class="feedback-list__item">
-            <a class="feedback-list__link"  href="https://htmlacademy.ru">HTML Academy</a>
+            <a class="feedback-list__link" href="https://htmlacademy.ru">HTML Academy</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <main class="form">
+  <main class="main">
     <h1 class="visually-hidden">Оставьте отзыв о Путешествии</h1>
-    <div class="form__introduce introduce">
+    <div class="main__introduce introduce">
       <img class="introduce__logo" src="/source/img/intro/sedona.svg" width="229" height="39" alt="Sedona">
     </div>
-    <div class="form__introduction introduction">
+    <div class="main__introduction introduction">
       <h2 class="introduction__title">Оставьте свой отзыв</h2>
       <p class="introduction__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </div>
-    <form class="form__feedback feedback">
-      <fieldset class="feedback__full-name full-name">
-        <legend class="full-name__title">Представьтесь:</legend>
-        <label class="full-name__name">Имя<input type="text" placeholder="Пётр" required></label>
-        <label class="full-name__surrname">Фамилия<input type="text" placeholder="Пустота" required></label>
-        <label class="full-name__patronymic">Отчество<input type="text" placeholder="Викторович"></label>
+    <form class="main__form form">
+      <fieldset class="form__fieldset fieldset">
+        <legend class="fieldset__title">Представьтесь:</legend>
+        <label class="fieldset__label">Имя<input type="text" placeholder="Пётр" required></label>
+        <label class="fieldset__label">Фамилия<input type="text" placeholder="Пустота" required></label>
+        <label class="fieldset__label">Отчество<input type="text" placeholder="Викторович"></label>
       </fieldset>
-      <fieldset class="feedback__contact-info contact-info">
-        <legend class="contact-info__title">Контактная информация:</legend>
-        <label class="contact-info__phone">Контактный телефон<input type="text" placeholder="Введите телефон" required></label>
-        <label class="contact-info__mail">Электронная почта<input type="text" placeholder="Введите e-mail" required></label>
+      <fieldset class="form__fieldset fieldset">
+        <legend class="fieldset__label">Контактная информация:</legend>
+        <label class="fieldset__label">Контактный телефон<input type="text" placeholder="Введите телефон" required></label>
+        <label class="fieldset__label">Электронная почта<input type="text" placeholder="Введите e-mail" required></label>
       </fieldset>
-      <fieldset class="feedback__impression impression">
+      <fieldset class="form__impression impression">
         <legend class="impression__title">Ваше общее впечатление:</legend>
         <ul class="impression__list">
           <li class="impression__item">
@@ -75,7 +79,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="feedback__visited visited">
+      <fieldset class="form__visited visited">
         <legend class="visited__title">Посещенные достопримечательности:</legend>
         <ul class="visited__list">
           <li class="visited__item">
@@ -104,11 +108,11 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="feedback__comment comment">
+      <fieldset class="form__comment comment">
         <legend class="comment__title">Опишите свои эмоции:</legend>
         <textarea class="comment__area" name="comment">Опишите подробно все свои восторги </textarea>
       </fieldset>
-      <input class="feedback__send" type="submit" value="Отправить отзыв">
+      <button class="form__send" type="submit" value="Отправить отзыв"></button>
       <p>*-обязательные поля</p>
     </form>
   </main>
@@ -116,13 +120,13 @@
     <p class="footer__hashtag">#visitSEDONA</p>
     <ul class="footer__social social">
       <li class="social__item">
-        <a class="social__link--vkontakte" href=""></a>
+        <a class="social__link social__link--vkontakte" href=""></a>
       </li>
       <li class="social__item">
-        <a class="social__link--telegram" href=""></a>
+        <a class="social__link social__link--telegram" href=""></a>
       </li>
       <li class="social__item">
-        <a class="social__link--youtube" href=""></a>
+        <a class="social__link social__link--youtube" href=""></a>
       </li>
     </ul>
     <div class="copyright">
