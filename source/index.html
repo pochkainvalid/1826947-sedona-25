@@ -13,7 +13,7 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--current">
+            <li class="site-list__item site-list__item site-list__item--current">
               <a class="site-list__link" href="">Главная</a>
             </li>
             <li class="site-list__item">
@@ -22,10 +22,10 @@
           </ul>
           <ul class="main-nav__list feedback-list">
             <li class="feedback-list__item">
-              <a class="feedback-list__link"  href="/source/form.html">Форма отзыва</a>
+              <a class="feedback-list__link" href="/source/form.html">Форма отзыва</a>
             </li>
             <li class="feedback-list__item">
-              <a class="feedback-list__link"  href="https://htmlacademy.ru">HTML Academy</a>
+              <a class="feedback-list__link" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -33,7 +33,7 @@
     </header>
     <main class="main">
       <h1 class="visually-hidden">Путешествие в Седону</h1>
-      <div class="main_slogan slogan">
+      <div class="main__slogan slogan">
         <img class="slogan__logo" src="/source/img/welcome.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona Because Grand Canyon sucks!">
       </div>
       <div class="main__introduction introduction">
@@ -47,16 +47,16 @@
           <p class="attraction__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             <ul class="attraction__advantages advantages">
               <li class="advantages__item">
-                <h3 class="advantage__title">Жилье</h3>
-                <p class="advantage__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <h3 class="advantages__title">Жилье</h3>
+                <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li class="advantages__item">
-                <h3 class="advantage__title">Еда</h3>
-                <p class="advantage__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <h3 class="advantages__title">Еда</h3>
+                <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="advantages__item">
-                <h3 class="advantage__title">Сувениры</h3>
-                <p class="advantage__description">Не только китайского, но и местного производства!</p>
+                <h3 class="advantages__title">Сувениры</h3>
+                <p class="advantages__description">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
         </li>
@@ -84,25 +84,31 @@
       <section class="main__search-hotel search-hotel">
         <h2 class="search-hotel__title">Заинтересовались?</h2>
         <p class="search-hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <form action="#"></form>
+        <form action="#">
           <button class="search-hotel__button button">Найти гостиницу</button>
         </form>
       </section>
       <div class="main__location location">
-        <img class="location__map" src="" width="320" height="350" alt="">
+        <img class="location__map" src="/source/img/map.jpg" width="320" height="350" alt="">
       </div>
     </main>
     <footer class="footer">
       <p class="footer__hashtag">#visitSEDONA</p>
       <ul class="footer__social social">
         <li class="social__item">
-          <a class="social__link--vkontakte" href=""></a>
+          <a class="social__link social__link--vkontakte" href="">
+            <span class="visually-hidden social__description">Vkontakte</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link--telegram" href=""></a>
+          <a class="social__link social__link--telegram" href="">
+            <span class="visually-hidden social__description">Telegram</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link--youtube" href=""></a>
+          <a class="social__link social__link--youtube" href="">
+            <span class="visually-hidden social__description">YouTube</span>
+          </a>
         </li>
       </ul>
       <div class="copyright">
