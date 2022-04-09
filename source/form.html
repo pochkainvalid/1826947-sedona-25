@@ -37,7 +37,7 @@
   <main class="main">
     <h1 class="visually-hidden">Оставьте отзыв о Путешествии</h1>
     <div class="main__introduce introduce">
-      <img class="introduce__logo" src="/source/img/intro/sedona.svg" width="229" height="39" alt="Sedona">
+      <img class="introduce__logo" src="img/intro/sedona.svg" width="229" height="39" alt="Sedona">
     </div>
     <div class="main__introduction introduction">
       <h2 class="introduction__title">Оставьте свой отзыв</h2>
@@ -46,14 +46,14 @@
     <form class="main__form form">
       <fieldset class="form__fieldset fieldset">
         <legend class="fieldset__title">Представьтесь:</legend>
-        <label class="fieldset__label">Имя<input type="text" placeholder="Пётр" required></label>
-        <label class="fieldset__label">Фамилия<input type="text" placeholder="Пустота" required></label>
-        <label class="fieldset__label">Отчество<input type="text" placeholder="Викторович"></label>
+        <label class="fieldset__label">Имя*:<input class="fieldset__placeholder" type="text" placeholder="Пётр" required></label>
+        <label class="fieldset__label">Фамилия*:<input class="fieldset__placeholder" type="text" placeholder="Пустота" required></label>
+        <label class="fieldset__label">Отчество:<input class="fieldset__placeholder" type="text" placeholder="Викторович"></label>
       </fieldset>
       <fieldset class="form__fieldset fieldset">
-        <legend class="fieldset__label">Контактная информация:</legend>
-        <label class="fieldset__label">Контактный телефон<input type="text" placeholder="Введите телефон" required></label>
-        <label class="fieldset__label">Электронная почта<input type="text" placeholder="Введите e-mail" required></label>
+        <legend class="fieldset__title">Контактная информация:</legend>
+        <label class="fieldset__label">Контактный телефон*:<input class="fieldset__placeholder" type="text" placeholder="Введите телефон" required></label>
+        <label class="fieldset__label">Электронная почта*:<input class="fieldset__placeholder" type="text" placeholder="Введите e-mail" required></label>
       </fieldset>
       <fieldset class="form__fieldset fieldset">
         <legend class="fieldset__title">Ваше общее впечатление:</legend>
@@ -78,7 +78,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__item ">
+      <fieldset class="form__fieldset">
         <legend class="form__title">Посещенные достопримечательности:</legend>
         <ul class="form__list">
           <li class="form__item">
@@ -89,14 +89,14 @@
           </li>
           <li class="form__item">
             <label class="control">
-              <input class="visually-hidden control__input" type="checkbox" name="Hill Bell" checked>
+              <input class="control__input" type="checkbox" name="Hill Bell" checked>
               <span class="control__label">Гора-Колокол</span>
             </label>
           </li>
           <li class="form__item">
             <label class="control">
               <input class="control__input" type="checkbox" name="Slide parkc" checked>
-              <span class="control-label">Слайд-парк</span>
+              <span class="control__label">Слайд-парк</span>
             </label>
           </li>
           <li class="form__item">
@@ -111,8 +111,8 @@
         <legend class="form__title">Опишите свои эмоции:</legend>
         <textarea class="form__area" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
-      <button class="form__send" type="submit" >Отправить отзыв</button>
-      <p>*-обязательные поля</p>
+      <button class="form__send button" type="submit" >Отправить отзыв</button>
+      <p class="form__description">*-обязательные поля</p>
     </form>
   </main>
   <footer class="footer">
@@ -136,8 +136,10 @@
     </ul>
     <div class="copyright">
       <p class="copyright__developed">Разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
-      <img class="copyright__logo" src="/source/img/htmlacademy.svg" width="27" height="35" alt="логотип HTML Academy">
+      <a class="copyright__link" href="https://htmlacademy.ru">
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
+      <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="35" alt="логотип HTML Academy">
     </div>
   </footer>
 </body>
