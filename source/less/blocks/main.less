@@ -1,9 +1,16 @@
 .main {
   flex-grow: 1;
+  background-color: rgba(255, 255, 255, 1);
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .main__slogan {
-
+  height: 389px;
+  margin-top: 56px;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(0, 0, 0, 1);
   background-image: url("../img/intro/welcome-background.jpg");
@@ -12,6 +19,7 @@
   margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
+    height: 518px;
     background-image: url("../img/intro/welcome-background--desktop.jpg");
     background-size: 768px 518px;
     background-repeat: no-repeat;
@@ -27,6 +35,17 @@
 .main__introduction {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    align-self: center;
+    width: 520px;
+    height: 102px;
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .main__attractions {
@@ -37,6 +56,11 @@
   justify-content: center;
   align-content: center;
   list-style-type: none;
+  margin-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .main__search-hotel {

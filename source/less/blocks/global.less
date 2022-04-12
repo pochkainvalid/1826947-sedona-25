@@ -19,8 +19,6 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -28,10 +26,22 @@ body {
   line-height: 26px;
   color: rgba(0, 0, 0, 1);
   background-color: rgba(255, 255, 255, 1);
-  min-width: 320px;
+  width: 320px;
   margin: 0 auto;
+  padding: 0 40px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    box-shadow: inset 1280px 0 0 0 rgba(231, 229, 229, 1);
+  }
 }
 
 .visually-hidden {

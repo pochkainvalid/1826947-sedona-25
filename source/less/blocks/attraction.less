@@ -1,4 +1,13 @@
-.attraction {
+.attraction__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &--deployed {
+    background-color: rgba(129, 179, 210, 1);
+  }
+
   @media (min-width: @tablet-width) {
     width: 256px;
     height: 256px;
@@ -6,7 +15,44 @@
 
   @media (min-width: @desktop-width) {
     width: 400px;
+  }
+}
+
+.attraction__title {
+  font-size: 18px;
+  max-width: 289px;
+
+  &--deployed {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.attraction__number,
+.attraction__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(51, 51, 51, 1);
+  max-width: 289px;
+
+  &--deployed {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.attraction__photo {
+  width: 320px;
+  height: 260px;
+  background-repeat: no-repeat;
+  background-size: 520px 260px;
+
+  @media (min-width: @tablet-width) {
+    width: 512px;
     height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
   }
 }
 
@@ -19,30 +65,7 @@
   color: rgba(0, 0, 0, 1);
   background-color: rgba(255, 255, 255, 1);
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     flex-direction: row;
-  }
-
-  @media (min-width: @desktop-width) {
-    flex-direction: row;
-  }
-}
-
-.attraction__title {
-  font-size: 18px;
-}
-
-.attraction__number,
-.attraction__description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: rgba(51, 51, 51, 1);
-
-  &--deployed {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color: rgba(255, 255, 255, 1);
   }
 }

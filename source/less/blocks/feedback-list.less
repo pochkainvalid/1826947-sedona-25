@@ -1,10 +1,6 @@
 .feedback-list {
   @media (min-width: @tablet-width) {
-    column-gap: 52px;
-  }
-
-  @media (min-width: @desktop-width) {
-    column-gap: 139px;
+    flex-direction: row;
   }
 }
 
@@ -15,6 +11,18 @@
   background-color: rgba(129, 179, 210, 1);
   margin-bottom: 1px;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+
+  @media (min-width: @tablet-width) {
+    width: 153px;
+    height: 56px;
+    color: rgba(0, 0, 0, 1);
+    background-color: inherit;
+    box-shadow: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 240px;
+  }
 }
 
 .feedback-list__link {
@@ -27,4 +35,10 @@
   padding-top: 17px;
   padding-bottom: 12px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 1);
+  }
 }
