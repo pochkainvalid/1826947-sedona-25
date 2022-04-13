@@ -44,17 +44,19 @@
       <p class="introduction__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </div>
     <form class="main__form form">
-      <fieldset class="form__fieldset fieldset">
-        <legend class="fieldset__title">Представьтесь:</legend>
-        <label class="fieldset__label">Имя*:<input class="fieldset__placeholder" type="text" placeholder="Пётр" required></label>
-        <label class="fieldset__label">Фамилия*:<input class="fieldset__placeholder" type="text" placeholder="Пустота" required></label>
-        <label class="fieldset__label">Отчество:<input class="fieldset__placeholder" type="text" placeholder="Викторович"></label>
-      </fieldset>
-      <fieldset class="form__fieldset fieldset">
-        <legend class="fieldset__title">Контактная информация:</legend>
-        <label class="fieldset__label">Контактный телефон*:<input class="fieldset__placeholder" type="text" placeholder="Введите телефон" required></label>
-        <label class="fieldset__label">Электронная почта*:<input class="fieldset__placeholder" type="text" placeholder="Введите e-mail" required></label>
-      </fieldset>
+      <div class="form__personal-data">
+        <fieldset class="form__fieldset fieldset">
+          <legend class="fieldset__title">Представьтесь:</legend>
+          <label class="fieldset__label">Имя*:<input class="fieldset__placeholder" type="text" placeholder="Пётр" required></label>
+          <label class="fieldset__label">Фамилия*:<input class="fieldset__placeholder" type="text" placeholder="Пустота" required></label>
+          <label class="fieldset__label">Отчество:<input class="fieldset__placeholder" type="text" placeholder="Викторович"></label>
+        </fieldset>
+        <fieldset class="form__fieldset fieldset">
+          <legend class="fieldset__title">Контактная информация:</legend>
+          <label class="fieldset__label">Контактный телефон*:<input class="fieldset__placeholder" type="text" placeholder="Введите телефон" required></label>
+          <label class="fieldset__label">Электронная почта*:<input class="fieldset__placeholder" type="text" placeholder="Введите e-mail" required></label>
+        </fieldset>
+      </div>
       <fieldset class="form__fieldset fieldset">
         <legend class="fieldset__title">Ваше общее впечатление:</legend>
         <ul class="fieldset__list">
@@ -78,22 +80,22 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset">
-        <legend class="form__title">Посещенные достопримечательности:</legend>
-        <ul class="form__list">
-          <li class="form__item">
+      <fieldset class="form__fieldset fieldset">
+        <legend class="fieldset__title">Посещенные достопримечательности:</legend>
+        <ul class="fieldset__list">
+          <li class="fieldset__item">
             <label class="control">
               <input class="control__input" type="checkbox" name="Devil bridge" checked>
               <span class="control__label">Мост Дьявола</span>
             </label>
           </li>
-          <li class="form__item">
+          <li class="fieldset__item">
             <label class="control">
               <input class="control__input" type="checkbox" name="Hill Bell" checked>
               <span class="control__label">Гора-Колокол</span>
             </label>
           </li>
-          <li class="form__item">
+          <li class="fieldset__item">
             <label class="control">
               <input class="control__input" type="checkbox" name="Slide parkc" checked>
               <span class="control__label">Слайд-парк</span>
@@ -111,8 +113,10 @@
         <legend class="form__title">Опишите свои эмоции:</legend>
         <textarea class="form__area" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
-      <button class="form__send button" type="submit" >Отправить отзыв</button>
-      <p class="form__description">* — обязательные поля</p>
+      <div class="form__footer">
+        <button class="form__send button" type="submit" >Отправить отзыв</button>
+        <p class="form__description">* — обязательные поля</p>
+      </div>
     </form>
   </main>
   <footer class="footer">

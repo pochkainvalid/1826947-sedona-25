@@ -1,3 +1,13 @@
+.form__personal-data {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+
+
 .form__fieldset {
   display: flex;
   flex-direction: column;
@@ -14,14 +24,22 @@
 
 .form__title {
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .form__item {
   border: 0;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 56px;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 48px;
+  }
 }
 
 .form__area {
@@ -33,12 +51,42 @@
   font-size: 18px;
   line-height: 26px;
   background-color: rgba(242, 242, 242, 1);
+
+  @media (min-width: @tablet-width) {
+    width: 614px;
+    height: 160px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 734px;
+  }
+}
+
+.form__footer {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 648px;
+    justify-content: space-between;
+
+    @media (min-width: @desktop-width) {
+      width: 768px;
+    }
+  }
 }
 
 .form__send {
   width: 281px;
   height: 58px;
   margin-bottom: 3px;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    margin: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 384px;
+  }
 }
 
 .form__description {
@@ -49,4 +97,13 @@
   line-height: 21px;
   color: rgba(51, 51, 51, 0.6);
   align-self: flex-end;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    align-self: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 768px;
+  }
 }
