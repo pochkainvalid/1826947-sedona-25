@@ -1,31 +1,41 @@
-.attraction__text {
+.attraction__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: rgba(129, 179, 210, 1);
+  padding-top: 54px;
+  padding-bottom: 40px;
 
-  &--deployed {
-    background-color: rgba(129, 179, 210, 1);
+  &--devils-bridge {
+    padding-top: 39px;
+    padding-bottom: 35px;
   }
 
   @media (min-width: @tablet-width) {
-    width: 256px;
-    height: 256px;
+    max-width: 256px;
+    padding: 39px 31px 35px 31px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 400px;
+    padding: 39px 72px 35px 72px;
   }
 }
 
 .attraction__title {
   font-size: 18px;
-  max-width: 289px;
+  margin: 0;
+  margin-bottom: 11px;
 
   &--deployed {
     color: rgba(255, 255, 255, 1);
+
+    @media (min-width: @tablet-width) {
+      max-width: 128px;
+    }
   }
 }
+
 
 .attraction__number,
 .attraction__description {
@@ -33,11 +43,23 @@
   font-size: 14px;
   line-height: 21px;
   color: rgba(51, 51, 51, 1);
-  max-width: 289px;
+  margin: 0;
 
   &--deployed {
     color: rgba(255, 255, 255, 1);
+
+    @media (min-width: @tablet-width) {
+      max-width: 194px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 285px;
+    }
   }
+}
+
+.attraction__number {
+  margin-bottom: 17px;
 }
 
 .attraction__photo {
@@ -45,6 +67,12 @@
   height: 260px;
   background-repeat: no-repeat;
   background-size: 520px 260px;
+
+  &--devil-bridge {
+    @media (min-width: @tablet-width) {
+      order: -1;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     width: 512px;
@@ -61,11 +89,12 @@
   flex-direction: column;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 23px 18px 52px 18px;
   color: rgba(0, 0, 0, 1);
   background-color: rgba(255, 255, 255, 1);
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    padding: 0;
   }
 }
