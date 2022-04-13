@@ -7,11 +7,38 @@
   font-size: 14px;
   line-height: 21px;
   margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    height: 347px;
+
+    &--first {
+      width: 648px;
+      height: 480px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    height: 267px;
+
+    &--first {
+      width: 1200px;
+      height: 400px;
+    }
+  }
 }
 
 .photos__photo {
   margin-bottom: 15px;
   align-self: center;
+}
+
+.photos__info {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    justify-content: space-between;
+  }
 }
 
 .photos__title {

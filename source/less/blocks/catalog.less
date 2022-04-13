@@ -1,16 +1,34 @@
 .catalog {
   display: flex;
   flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .catalog__itroduce {
-  display: flex;
-  flex-direction: column;
+  height: 214px;
+  margin-top: 56px;
+  margin-bottom: 33px;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(0, 0, 0, 1);
   background-image: url("../img/intro/sedona-background.jpg");
   background-size: 320px 214px;
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    height: 290px;
+    background-image: url("../img/intro/sedona-background--tablet.jpg");
+    background-size: 768px 290px;
+    background-repeat: no-repeat;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 518px;
+    background-image: url("../img/intro/sedona-background--desktop.jpg");
+    background-size: 1200px 518px;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+  }
 }
 
 .catalog__photos {
@@ -19,4 +37,9 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
