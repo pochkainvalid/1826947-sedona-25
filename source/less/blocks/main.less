@@ -1,21 +1,51 @@
 .main {
   flex-grow: 1;
+  background-color: rgba(255, 255, 255, 1);
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .main__slogan {
-  display: flex;
-  flex-direction: column;
+  height: 389px;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(0, 0, 0, 1);
   background-image: url("../img/intro/welcome-background.jpg");
   background-size: 320px 389px;
   background-repeat: no-repeat;
-  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    height: 518px;
+    background-image: url("../img/intro/welcome-background--desktop.jpg");
+    background-size: 768px 518px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/intro/welcome-background--desktop.jpg");
+    background-size: 1200px 518px;
+    background-repeat: no-repeat;
+  }
 }
 
 .main__introduction {
   display: flex;
   flex-direction: column;
+  padding-top: 32px;
+  padding-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    align-self: center;
+    width: 520px;
+    height: 102px;
+    padding: 32px 124px 57px 124px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 59px 358px 45px 359px;
+  }
 }
 
 .main__attractions {
@@ -24,12 +54,26 @@
   margin: 0;
   padding: 0;
   justify-content: center;
+  align-content: center;
   list-style-type: none;
 }
 
 .main__search-hotel {
   display: flex;
   flex-direction: column;
+  padding: 39px 18px 49px 18px;
+
+  @media (min-width: @tablet-width) {
+    padding: 61px 155px 58px 155px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 66px;
+  }
+}
+
+.main__location {
+  display: flex;
 }
 
 .main__introduce {

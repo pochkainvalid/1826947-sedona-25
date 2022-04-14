@@ -1,6 +1,15 @@
 .main-header {
   position: absolute;
   width: 320px;
+  background-color: rgb(255, 255, 255, 1);
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .main-header__logo {
@@ -9,9 +18,4 @@
   left: 0;
   right: 0;
   margin: auto;
-}
-
-.main-nav__list {
-  margin: 0;
-  padding: 0;
 }
