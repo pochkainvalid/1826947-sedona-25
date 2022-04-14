@@ -11,6 +11,10 @@
 
 .fieldset__title {
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 240px;
+  }
 }
 
 .fieldset__placeholder {
@@ -24,6 +28,10 @@
   color: rgba(0, 0, 0, 1);
   background-color: rgba(242, 242, 242, 1);
   border: 0;
+
+  @media (min-width: @desktop-width) {
+  width: 398px;
+  }
 }
 
 .fieldset__list {
@@ -34,11 +42,45 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    max-width: 576px;
+    gap: 16px;
+    padding: 0 36px;
+  }
+  @media (min-width: @desktop-width) {
+    max-width: 100%;
+  }
+
+  &--landmark {
+    @media (min-width: @tablet-width) {
+      max-width: 480px;
+      padding: 0 84px;
+      column-gap: 32px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 100%;
+    }
+  }
+}
+
+.fieldset__list--landmark .fieldset__item {
+  @media (min-width: @tablet-width) {
+    min-width: 224px;
+    min-height: 26px;
+    padding: 10px 0;
   }
 }
 
 .fieldset__item {
   margin: 0;
   margin-bottom: 16px;
-  max-width: 280px;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 10px 10px 10px 60px;
+  }
 }

@@ -1,9 +1,17 @@
 .form__personal-data {
+  padding-top: 24px;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-evenly;
+    padding: 0;
+    padding-bottom: 63px;
+    justify-content: space-around;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 15px;
   }
 }
 
@@ -11,10 +19,19 @@
 .form__fieldset {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  margin-bottom: 64px;
-  padding: 0;
   border: 0;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    padding-bottom: 56px;
+  }
 }
 
 .form__list {
@@ -27,18 +44,20 @@
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
+    margin-bottom: 28px;
   }
 }
 
 .form__item {
   border: 0;
   margin: 0;
-  margin-bottom: 56px;
   padding: 0;
+  padding-bottom: 56px;
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 48px;
+    padding: 0;
+    padding-bottom: 48px;
   }
 }
 
@@ -46,6 +65,7 @@
   width: 247px;
   height: 118px;
   padding: 16px;
+  border: 0;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -54,7 +74,7 @@
 
   @media (min-width: @tablet-width) {
     width: 614px;
-    height: 160px;
+    height: 128px;
   }
 
   @media (min-width: @desktop-width) {
@@ -63,8 +83,11 @@
 }
 
 .form__footer {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: @tablet-width) {
-    display: flex;
+    flex-direction: row;
     width: 648px;
     justify-content: space-between;
 
@@ -77,7 +100,6 @@
 .form__send {
   width: 281px;
   height: 58px;
-  margin-bottom: 3px;
 
   @media (min-width: @tablet-width) {
     width: 324px;
@@ -91,7 +113,6 @@
 
 .form__description {
   margin: 0;
-  margin-right: 20px;
   font-weight: 400;
   font-size: 12px;
   line-height: 21px;
