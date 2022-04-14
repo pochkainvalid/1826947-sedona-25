@@ -1,16 +1,55 @@
 .attractions__attraction {
-  min-width: 320px;
   background-color: rgba(238, 238, 238, 1);
 
   @media (min-width: @tablet-width) {
-    min-width: 256px;
-    min-height: 256px;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   @media (min-width: @desktop-width) {
-    width: 400px;
+    min-height: 152px;
+  }
+
+  &--small-square {
+    padding: 26px 20px 24px 20px;
+
+    @media (min-width: @tablet-width) {
+      max-width: 185px;
+      padding: 42px 36px 63px 35px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 300px;
+      padding: 43px 50px 62px 50px;
+    }
+  }
+
+  &--beautiful-road {
+    padding: 24px 41px 24px 41px;
+
+    @media (min-width: @tablet-width) {
+      max-width: 148px;
+      padding: 46px 54px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 292px;
+      padding: 42px 54px 62px 54px;
+    }
+  }
+
+  &--few-tourists {
+    padding: 24px 31px 26px 31px;
+
+    @media (min-width: @tablet-width) {
+      max-width: 135px;
+      padding: 46px 60px 46px 61px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 290px;
+      padding: 42px 55px 62px 55px;
+    }
   }
 
   &--deployed {
