@@ -1,4 +1,4 @@
-.attractions__attraction--deployed .attraction__wrapper:first-of-type {
+.attractions__attraction--deployed .attraction__wrapper:first-child {
   padding-top: 54px;
   padding-bottom: 40px;
 
@@ -8,7 +8,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 39px 72px 35px 72px;
+    max-width: 262px;
+    padding: 39px 69px 35px 69px;
   }
 }
 
@@ -16,7 +17,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   background-color: rgba(129, 179, 210, 1);
   padding-top: 39px;
   padding-bottom: 35px;

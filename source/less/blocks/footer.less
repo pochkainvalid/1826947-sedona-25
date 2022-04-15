@@ -1,13 +1,20 @@
-.footer {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(255, 255, 255, 1);
-  padding-top: 29px;
-  padding-bottom: 29px;
+.footer--main {
   margin-top: 10px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+  margin: 0;
+  padding-top: 29px;
+  padding-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
