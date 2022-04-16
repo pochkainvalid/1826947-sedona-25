@@ -1,6 +1,26 @@
 .copyright {
   display: flex;
   justify-content: center;
+
+  &:hover {
+    .copyright__developed {
+      color: rgba(129, 179, 210, 1);
+    }
+
+    .copyright__logo {
+      fill: rgba(129, 179, 210, 1);
+    }
+  }
+
+  &:active {
+    .copyright__developed {
+      color: rgba(179, 179, 179, 1);
+    }
+
+    .copyright__logo {
+      fill: rgba(179, 179, 179, 1);
+    }
+  }
 }
 
 .copyright__developed {
@@ -15,4 +35,5 @@
 .copyright__logo {
   align-self: center;
   margin: 0;
+  fill: rgba(0, 0, 0, 1);
 }

@@ -1,10 +1,78 @@
 .advantages__item {
   text-align: left;
   padding-left: 47px;
+  position: relative;
 
   &--residence {
+    &::before {
+      content: "";
+      display: block;
+      width: 39px;
+      height: 37px;
+      position: absolute;
+      top: -5px;
+      left: 0;
+      background-image: url("../img/advantages/house.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+
+      @media (min-width: @tablet-width) {
+        width: 75px;
+        height: 72px;
+        top: 40px;
+        left: auto;
+        right: auto;
+      }
+    }
+
     @media (min-width: @tablet-width) {
       padding: 158px 36px 59px 36px;
+    }
+  }
+
+  &--food {
+    &::before {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 35px;
+      position: absolute;
+      top: -5px;
+      left: 0;
+      background-image: url("../img/advantages/burger.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+
+      @media (min-width: @tablet-width) {
+        width: 76px;
+        height: 68px;
+        top: 45px;
+        left: auto;
+        right: auto;
+      }
+    }
+  }
+
+  &--souvenirs {
+    &::before {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 38px;
+      position: absolute;
+      top: -10px;
+      left: 0;
+      background-image: url("../img/advantages/gift.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+
+      @media (min-width: @tablet-width) {
+        width: 64px;
+        height: 75px;
+        top: 45px;
+        left: auto;
+        right: auto;
+      }
     }
   }
 

@@ -1,5 +1,6 @@
 .attractions__attraction {
   background-color: rgba(238, 238, 238, 1);
+  position: relative;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -12,6 +13,20 @@
 
   &--small-square {
     padding: 26px 20px 24px 20px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 284px;
+      height: 1px;
+      background-color: rgba(214, 214, 214, 1);
+
+      @media (min-width: @tablet-width) {
+        display: none;
+      }
+    }
 
     @media (min-width: @tablet-width) {
       max-width: 185px;
@@ -26,6 +41,20 @@
 
   &--beautiful-road {
     padding: 24px 41px 24px 41px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 284px;
+      height: 1px;
+      background-color: rgba(214, 214, 214, 1);
+
+      @media (min-width: @tablet-width) {
+        display: none;
+      }
+    }
 
     @media (min-width: @tablet-width) {
       max-width: 148px;
