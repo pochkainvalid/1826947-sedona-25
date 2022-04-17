@@ -1,15 +1,6 @@
 .main-header {
-  position: absolute;
-  width: 320px;
+  position: relative;
   background-color: rgb(255, 255, 255, 1);
-
-  @media (min-width: @tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1200px;
-  }
 }
 
 .main-header__logo {
@@ -18,4 +9,18 @@
   left: 0;
   right: 0;
   margin: auto;
+  z-index: 2;
+}
+
+
+.main-nav--closed .main-header__logo {
+  display: block;
+}
+
+.main-nav--opened .main-header__logo {
+  display: none;
+}
+
+.main-nav--nojs .main-header__logo {
+  display: none;
 }

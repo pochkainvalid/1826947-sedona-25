@@ -1,8 +1,18 @@
+.main-nav {
+  min-height: 56px;
+}
+
 .main-nav__wrapper {
+  position: absolute;
   display: flex;
   flex-direction: column;
+}
+
+.main-nav--closed .main-nav__wrapper {
+  display: none;
 
   @media (min-width: @tablet-width) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 768px;
@@ -21,6 +31,35 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  background-color: rgba(129, 179, 210, 1);
+
+  @media (min-width: @tablet-width) {
+    background-color: rgba(255, 255, 255, 1);
+
+    &.site-list {
+      max-width: 241px;
+      margin-left: 50px;
+      column-gap: 75px;
+
+      @media (min-width: @desktop-width) {
+        max-width: 507px;
+        margin-left: 91px;
+        column-gap: 162px;
+      }
+    }
+
+    &.feedback-list {
+      max-width: 292px;
+      margin-right: 29px;
+      column-gap: 52px;
+
+      @media (min-width: @desktop-width) {
+        max-width: 508px;
+        margin-right: 71px;
+        column-gap: 139px;
+      }
+    }
+  }
 }
 
 .main-nav__toggle {
@@ -31,8 +70,60 @@
   padding: 0;
   top: 17px;
   right: 20px;
+  cursor: pointer;
+  z-index: 2;
+  background-color: inherit;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
 
   @media (min-width: @tablet-width) {
     display: none;
   }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 4px;
+  background-color: rgba(129, 179, 210, 1);
+  box-shadow: 0 9px 0 0 rgba(129, 179, 210, 1), 0 18px 0 0 rgba(129, 179, 210, 1);
+}
+
+.main-nav--opened .main-nav__toggle {
+  width: 23px;
+  height: 23px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    top: 10px;
+    right: 0;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
 }

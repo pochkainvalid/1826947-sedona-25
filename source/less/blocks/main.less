@@ -10,11 +10,24 @@
 
 .main__slogan {
   height: 389px;
+  position: relative;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(0, 0, 0, 1);
   background-image: url("../img/intro/welcome-background.jpg");
   background-size: 320px 389px;
   background-repeat: no-repeat;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 57px;
+    background-image: url("../img/intro/welcome-decoration.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: @tablet-width) {
     height: 518px;
@@ -38,6 +51,22 @@
   justify-content: center;
   align-content: center;
   list-style-type: none;
+
+  &::before {
+    content: "";
+    display: block;
+    margin-bottom: -26px;
+    width: 100%;
+    height: 57px;
+    background-image: url("../img/attractions/attractions-wrapper-decoration.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .main__search-hotel {
@@ -56,6 +85,23 @@
 
 .main__location {
   display: flex;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 17px;
+    height: 17px;
+    background-color: rgba(129, 179, 211, 1);
+    border: 5px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+  }
 }
 
 .main__introduce {
