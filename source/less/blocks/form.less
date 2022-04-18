@@ -1,31 +1,53 @@
 .form__personal-data {
-  padding-top: 24px;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding: 0;
-    padding-bottom: 63px;
+    margin-bottom: 48px;
     justify-content: space-around;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 15px;
+    margin-bottom: 56px;
   }
 }
 
+.form__personal-data::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(219, 219, 219, 1);
+  }
+}
+
+.form__feedback {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+}
 
 .form__fieldset {
   display: flex;
   flex-direction: column;
   border: 0;
   margin: 0;
-  padding: 0;
-  padding-bottom: 34px;
+  padding: 0 20px 34px 20px;
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(229, 229, 229, 1);
 
   @media (min-width: @tablet-width) {
     padding-bottom: 58px;
+    border: none;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -33,6 +55,13 @@
     padding-bottom: 56px;
   }
 }
+
+.form__feedback .form__fieldset {
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
+}
+
 
 .form__list {
   margin: 0;
@@ -43,6 +72,7 @@
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
+    min-width: 402px;
     font-size: 21px;
     margin-bottom: 28px;
   }
@@ -61,6 +91,16 @@
   }
 }
 
+.form__feedback {
+  .form__fieldset,
+  .form__item {
+
+    @media (min-width: @tablet-width) {
+      border-top: 1px solid rgba(219, 219, 219, 1);
+    }
+  }
+}
+
 .form__area {
   resize: none;
   width: 247px;
@@ -74,7 +114,7 @@
   background-color: rgba(242, 242, 242, 1);
 
   @media (min-width: @tablet-width) {
-    width: 614px;
+    width: 616px;
     height: 128px;
   }
 
@@ -86,11 +126,13 @@
 .form__footer {
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     width: 648px;
     justify-content: space-between;
+    padding: 0;
 
     @media (min-width: @desktop-width) {
       width: 768px;
@@ -123,9 +165,5 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     align-self: center;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 768px;
   }
 }

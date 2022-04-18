@@ -1,3 +1,68 @@
+.control {
+  position: relative;
+  display: block;
+  padding: 10px 0 10px 62px;
+  text-align: start;
+}
+
 .control__label {
   text-transform: none;
+}
+
+.control__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(229, 229, 229, 1);
+  }
+
+  &:active {
+    background-color: rgba(213, 213, 213, 1);
+  }
+}
+
+.control__input[type="checkbox"] + .control__mark {
+  border-radius: 4px;
+}
+
+.control__input[type="radio"]:checked + .control__mark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 16px;
+  height: 16px;
+  background-color: rgba(51, 51, 51, 1);
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked:active + .control__mark::before {
+  opacity: 0.3;
+}
+
+.control__input[type="checkbox"]:checked + .control__mark::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/tick.svg");
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.control__input[type="checkbox"]:checked:active + .control__mark::before {
+  opacity: 0.3;
 }
