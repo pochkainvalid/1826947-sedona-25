@@ -112,6 +112,7 @@
   background-size: 320px 214px;
   background-repeat: no-repeat;
   margin: 0;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     height: 290px;
@@ -127,6 +128,18 @@
     background-size: 1200px 518px;
     background-repeat: no-repeat;
   }
+}
+
+.main__introduce::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 57px;
+  background-image: url(../img/intro/welcome-decoration.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .main__introduction {

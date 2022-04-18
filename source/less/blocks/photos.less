@@ -1,45 +1,27 @@
 .photos__item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  align-self: center;
   font-size: 14px;
   line-height: 21px;
-  margin-top: 24px;
-  margin-bottom: 25px;
+  padding: 24px 20px 25px 20px;
+  border-bottom: 1px solid rgba(229, 229, 229, 1);
 
-  &:nth-of-type(2n+1) {
-    @media (min-width: @tablet-width) {
-      background-color: rgba(234, 234, 234, 1);
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    border: 0;
+  }
+
+  &--first {
+    .photos__photo {
+      @media (min-width: @tablet-width) {
+        width: 648px;
+        height: 400px;
+      }
+
+      @media (min-width: @desktop-width) {
+        width: 1200px;
+      }
     }
-  }
-
-  @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 20px 209px 68px 27px;
-    grid-template-rows: 267px 22px 25px 18px 15px;
-    justify-items: baseline;
-    margin: 0;
-    background-color: rgba(242, 242, 242, 1);
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-template-columns: 20px 250px 103px 27px;
-    grid-template-rows: 187px 22px 25px 18px 15px;
-    color: rgba(255, 255, 255, 1);
-  }
-}
-
-.photos__item--first {
-  @media (min-width: @tablet-width) {
-    grid-template-columns: 20px auto 100px 27px;
-    grid-template-rows: 400px 22px 25px 18px 15px;
-    margin: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-template-columns: 20px auto 103px 27px;
-    grid-template-rows: 320px 22px 25px 18px 15px;
   }
 }
 
@@ -51,45 +33,59 @@
     width: 324px;
     height: 267px;
     margin: 0;
-    grid-column-start: 1;
-    grid-column-end: -1;
-    grid-row-start: 1;
-    grid-row-end: -1;
   }
 
   @media (min-width: @desktop-width) {
     width: 400px;
-    grid-row-start: 1;
-    grid-row-end: -1;
-  }
-}
-
-.photos__item--first .photos__photo {
-  @media (min-width: @tablet-width) {
-    width: 648px;
-    height: 400px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1200px;
   }
 }
 
 .photos__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
   @media (min-width: @tablet-width) {
-    display: grid;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding: 22px 20px 15px 21px;
+    background-color: rgba(242, 242, 242, 1);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -80px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
-.photos__title {
-  margin: 0;
+.photos__item:nth-of-type(3) {
+  .photos__info {
+    @media (min-width: @tablet-width) {
+      background-color: rgba(234, 234, 234, 1);
+    }
+
+    @media (min-width: @desktop-width) {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.photos__description {
+  text-align: start;
+  padding-bottom: 16px;
+
 
   @media (min-width: @tablet-width) {
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 2;
+    min-height: 43px;
+    padding: 0;
   }
+}
+
+
+.photos__title {
+  margin: 0;
 }
 
 .photos__author {
@@ -98,36 +94,40 @@
   text-transform: none;
   color: rgba(51, 51, 51, 1);
 
-  @media (min-width: @tablet-width) {
-    grid-row-start: 4;
-    grid-row-end: 5;
-    grid-column-start: 2;
-    grid-column-end: 2;
-  }
-
   @media (min-width: @desktop-width) {
     color: rgba(255, 255, 255, 1);
   }
 }
 
 .photos__like {
+  position: relative;
   border: 0;
   color: rgb(0, 0, 0, 1);
   background-color: initial;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  margin-left: 37px;
-
-  @media (min-width: @tablet-width) {
-    grid-column-start: 3;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    align-self: center;
-  }
+  padding-left: 37px;
+  cursor: pointer;
 
   @media (min-width: @desktop-width) {
-    justify-self: flex-end;
     color: rgba(255, 255, 255, 1);
+  }
+}
+
+.photos__like::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 23px;
+  height: 21px;
+  background-image: url("../img/like.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/like--desktop.svg");
   }
 }
