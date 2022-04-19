@@ -9,10 +9,10 @@
 <body>
   <div class="page-wrapper">
     <header class="main-header">
-      <a class="main-header__link" href="index.html">
-        <img class="main-header__logo" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны">
-      </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <a class="main-header__link" href="index.html">
+          <img class="main-header__logo" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны">
+        </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -48,33 +48,52 @@
       <ul class="catalog__photos photos">
         <li class="photos__item photos__item photos__item--first">
           <img class="photos__photo" src="img/photo-catalog/not-native-spaces.jpg" width="280" height="280" alt="">
-          <h3 class="photos__title">Неродные просторы</h3>
-          <p class="photos__author">Автор фото: Борис</p>
-          <button class="photos__like" type="button">1350</button>
+          <div class="photos__info">
+            <div class="photos__description">
+              <h3 class="photos__title">Неродные просторы</h3>
+              <p class="photos__author">Автор фото: Борис</p>
+            </div>
+            <button class="photos__like" type="button">1350</button>
+          </div>
         </li>
         <li class="photos__item">
           <img class="photos__photo" src="img/photo-catalog/local-vegetation.jpg" width="280" height="280" alt="">
-          <h3 class="photos__title">Местная растительность</h3>
-          <p class="photos__author">Автор фото: Сергей</p>
-          <button class="photos__like" type="button">143</button>
+          <div class="photos__info">
+            <div class="photos__description">
+              <h3 class="photos__title">Местная растительность</h3>
+              <p class="photos__author">Автор фото: Сергей</p>
+            </div>
+            <button class="photos__like" type="button">143</button>
+          </div>
         </li>
         <li class="photos__item">
           <img class="photos__photo" src="img/photo-catalog/road-to-north.jpg" width="280" height="280" alt="">
-          <h3 class="photos__title">Дорога на север</h3>
-          <p class="photos__author">Автор фото: Петр</p>
-          <button class="photos__like" type="button">96</button>
+          <div class="photos__info">
+            <div class="photos__description">
+              <h3 class="photos__title">Дорога на север</h3>
+              <p class="photos__author">Автор фото: Петр</p>
+            </div>
+            <button class="photos__like" type="button">96</button>
+          </div>
         </li>
         <li class="photos__item">
           <img class="photos__photo" src="img/photo-catalog/devil-bridge.jpg" width="280" height="280" alt="">
-          <h3 class="photos__title">Мост Дьявола</h3>
-          <p class="photos__author">Автор фото: Антон</p>
-          <button class="photos__like" type="button">254</button>
+          <div class="photos__info">
+            <div class="photos__description">
+              <h3 class="photos__title">Мост Дьявола</h3>
+              <p class="photos__author">Автор фото: Антон</p>
+            </div>
+            <button class="photos__like" type="button">254</button>
+          </div>
         </li>
       </ul>
       <div class="catalog__conviction conviction">
         <h2 class="conviction__title">Все еще сомневаетесь?</h2>
         <p class="conviction__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подоражали в очередной раз!</p>
-        <video class="conviction__video" width="280" height="177" poster="img/video-preview.jpg"></video>
+        <div class="conviction__video-wrapper">
+          <button class="conviction__play" type="button"></button>
+          <video class="conviction__video" poster="img/video-preview.jpg"></video>
+        </div>
       </div>
     </main>
     <footer class="footer">
@@ -97,13 +116,16 @@
         </li>
       </ul>
       <div class="copyright">
-        <p class="copyright__developed">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru">
+          <p class="copyright__developed">Разработано</p>
           <span class="visually-hidden">HTML Academy</span>
+          <svg class="copyright__logo" width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z"/>
+          </svg>
         </a>
-        <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="35" alt="логотип HTML Academy">
       </div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
