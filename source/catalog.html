@@ -39,7 +39,11 @@
     <main class="catalog">
       <h1 class="visually-hidden">Фотографии с местностью Сендоны</h1>
       <div class="catalog__itroduce introduce">
-        <img class="introduce__logo" src="img/intro/sedona.svg" width="229" height="39" alt="Sedona">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/intro/sedona--desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/intro/sedona--tablet.svg">
+          <img class="introduce__logo" src="img/intro/sedona.svg" width="229" height="39" alt="Sedona">
+        </picture>
       </div>
       <div class="catalog__introduction introduction">
         <h2 class="introduction__title">Фото и видео</h2>
@@ -47,7 +51,11 @@
       </div>
       <ul class="catalog__photos photos">
         <li class="photos__item photos__item photos__item--first">
-          <img class="photos__photo" src="img/photo-catalog/not-native-spaces.jpg" width="280" height="280" alt="">
+          <picture class="photos__photo">
+            <source media="(min-width: 1200px)" srcset="img/photo-catalog/not-native-spaces--desktop.jpg 1x, img/photo-catalog/not-native-spaces@2x--desktop.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-catalog/not-native-spaces--tablet.jpg 1x, img/photo-catalog/not-native-spaces@2x--tablet.jpg 2x">
+            <img src="img/photo-catalog/not-native-spaces.jpg" srcset="img/photo-catalog/not-native-spaces@2x.jpg 2x" alt="">
+          </picture>
           <div class="photos__info">
             <div class="photos__description">
               <h3 class="photos__title">Неродные просторы</h3>
@@ -57,7 +65,11 @@
           </div>
         </li>
         <li class="photos__item">
-          <img class="photos__photo" src="img/photo-catalog/local-vegetation.jpg" width="280" height="280" alt="">
+          <picture class="photos__photo">
+            <source media="(min-width: 1200px)" srcset="img/photo-catalog/local-vegetation--desktop.jpg 1x, img/photo-catalog/local-vegetation@2x--desktop.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-catalog/local-vegetation--tablet.jpg 1x, img/photo-catalog/local-vegetation@2x--tablet.jpg 2x">
+            <img src="img/photo-catalog/local-vegetation.jpg" srcset="img/photo-catalog/local-vegetation@2x.jpg 2x" alt="">
+          </picture>
           <div class="photos__info">
             <div class="photos__description">
               <h3 class="photos__title">Местная растительность</h3>
@@ -67,7 +79,11 @@
           </div>
         </li>
         <li class="photos__item">
-          <img class="photos__photo" src="img/photo-catalog/road-to-north.jpg" width="280" height="280" alt="">
+          <picture class="photos__photo">
+            <source media="(min-width: 1200px)" srcset="img/photo-catalog/road-to-north.jpg 1x, img/photo-catalog/road-to-north@2x--desktop.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-catalog/road-to-north.jpg 1x, img/photo-catalog/road-to-north@2x--tablet.jpg 2x">
+            <img src="img/photo-catalog/road-to-north.jpg" srcset="img/photo-catalog/road-to-north@2x.jpg 2x" alt="">
+          </picture>
           <div class="photos__info">
             <div class="photos__description">
               <h3 class="photos__title">Дорога на север</h3>
@@ -77,7 +93,11 @@
           </div>
         </li>
         <li class="photos__item">
-          <img class="photos__photo" src="img/photo-catalog/devil-bridge.jpg" width="280" height="280" alt="">
+          <picture class="photos__photo">
+            <source media="(min-width: 1200px)" srcset="img/photo-catalog/devil-bridge--desktop.jpg 1x, img/photo-catalog/devil-bridge@2x--desktop.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-catalog/devil-bridge--tablet.jpg 1x, img/photo-catalog/devil-bridge@2x--tablet.jpg 2x">
+            <img src="img/photo-catalog/devil-bridge.jpg" srcset="img/photo-catalog/devil-bridge@2x.jpg 2x" alt="">
+          </picture>
           <div class="photos__info">
             <div class="photos__description">
               <h3 class="photos__title">Мост Дьявола</h3>

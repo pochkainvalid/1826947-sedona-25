@@ -39,7 +39,11 @@
     <main class="main">
       <h1 class="visually-hidden">Оставьте отзыв о Путешествии</h1>
       <div class="main__introduce introduce">
-        <img class="introduce__logo" src="img/intro/sedona.svg" width="229" height="39" alt="Sedona">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/intro/sedona--desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/intro/sedona--tablet.svg">
+          <img class="introduce__logo" src="img/intro/sedona.svg" width="229" height="39" alt="Sedona">
+        </picture>
       </div>
       <div class="main__introduction introduction">
         <h2 class="introduction__title">Оставьте свой отзыв</h2>
