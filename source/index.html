@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico"> <!--32x32-->
   </head>
   <body>
     <div class="page-wrapper">
@@ -37,7 +38,11 @@
       <main class="main">
         <h1 class="visually-hidden">Путешествие в Седону</h1>
         <div class="main__slogan slogan">
-          <img class="slogan__logo" src="img/intro/welcome-mobile.svg" alt="Welcome to the gorgeous Sedona Because Grand Canyon sucks!">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/intro/welcome-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/intro/welcome-tablet.svg">
+            <img class="slogan__logo" src="img/intro/welcome-mobile.svg" alt="Welcome to the gorgeous Sedona Because Grand Canyon sucks!">
+          </picture>
         </div>
         <div class="main__introduction introduction">
           <h2 class="introduction__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -50,21 +55,25 @@
               <p class="attraction__number">— №1 —</p>
               <p class="attraction__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <img class="attraction__photo" src="img/attractions/real-city.jpg" alt="Город Седона">
-              <ul class="attraction__advantages advantages">
-                <li class="advantages__item advantages__item--residence">
-                  <h3 class="advantages__title">Жилье</h3>
-                  <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                </li>
-                <li class="advantages__item advantages__item--food">
-                  <h3 class="advantages__title">Еда</h3>
-                  <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                </li>
-                <li class="advantages__item advantages__item--souvenirs">
-                  <h3 class="advantages__title">Сувениры</h3>
-                  <p class="advantages__description">Не только китайского, но и местного производства!</p>
-                </li>
-              </ul>
+            <picture class="attraction__photo">
+              <source media="(min-width: 1200px)" srcset="img/attractions/real-city--desktop.jpg 1x, img/attractions/real-city@2x--desktop.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/attractions/real-city--tablet.jpg 1x, img/attractions/real-city@2x--tablet.jpg 2x">
+              <img src="img/attractions/real-city.jpg" srcset="img/attractions/real-city@2x.jpg 2x" alt="Город Седона">
+            </picture>
+            <ul class="attraction__advantages advantages">
+              <li class="advantages__item advantages__item--residence">
+                <h3 class="advantages__title">Жилье</h3>
+                <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="advantages__item advantages__item--food">
+                <h3 class="advantages__title">Еда</h3>
+                <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="advantages__item advantages__item--souvenirs">
+                <h3 class="advantages__title">Сувениры</h3>
+                <p class="advantages__description">Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
           </li>
           <li class="attractions__attraction attraction attractions__attraction--deployed">
             <div class="attraction__wrapper">
@@ -72,7 +81,11 @@
               <p class="attraction__number">— №2 —</p>
               <p class="attraction__description">Да, по нему можно пройти, если вы осмелитесь, конечно</p>
             </div>
-            <img class="attraction__photo attraction__photo--devil-bridge" src="img/attractions/devil-bridge.jpg" alt="Мост Дьявола">
+            <picture class="attraction__photo attraction__photo--devil-bridge">
+              <source media="(min-width: 1200px)" srcset="img/attractions/devil-bridge--desktop.jpg 1x, img/attractions/devil-bridge@2x--desktop.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/attractions/devil-bridge--tablet.jpg 1x, img/attractions/devil-bridge@2x--tablet.jpg 2x">
+              <img src="img/attractions/devil-bridge.jpg" srcset="img/attractions/devil-bridge@2x.jpg 2x" alt="Мост Дьявола">
+            </picture>
           </li>
           <li class="attractions__attraction attraction attractions__attraction--small-square">
               <h3 class="attraction__title">Небольшая площадь</h3>
@@ -96,7 +109,11 @@
           <a class="search-hotel__button button">Найти гостиницу</a>
         </section>
         <div class="main__location location">
-          <img class="location__map" src="img/map/map.jpg" width="320" height="350" alt="">
+          <picture class="location__map">
+            <source media="(min-width: 1200px)" srcset="img/map/map--desktop.jpg 1x, img/map/map@2x--desktop.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map/map--tablet.jpg 1x, img/map/map@2x--tablet.jpg 2x">
+          <img class="location__map" src="img/map/map.jpg" srcset="img/map/map@2x.jpg 2x" width="320" height="350" alt="">
+          </picture>
         </div>
       </main>
       <footer class="footer footer--main">

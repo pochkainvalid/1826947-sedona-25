@@ -17,6 +17,10 @@
   background-size: 320px 389px;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro/welcome-background@2x.jpg");
+  }
+
   &::after {
     content: "";
     display: block;
@@ -31,15 +35,23 @@
 
   @media (min-width: @tablet-width) {
     height: 518px;
-    background-image: url("../img/intro/welcome-background--desktop.jpg");
+    background-image: url("../img/intro/welcome-background--tablet.jpg");
     background-size: 768px 518px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro/welcome-background@2x--tablet.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/intro/welcome-background--desktop.jpg");
     background-size: 1200px 518px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro/welcome-background@2x--desktop.jpg");
+    }
   }
 }
 
@@ -112,14 +124,15 @@
   background-size: 320px 214px;
   background-repeat: no-repeat;
   margin: 0;
+  margin-top: -56px;
   position: relative;
 
   @media (min-width: @tablet-width) {
     height: 290px;
+    margin: 0;
     background-image: url("../img/intro/sedona-background--tablet.jpg");
     background-size: 768px 290px;
     background-repeat: no-repeat;
-    margin-top: 56px;
   }
 
   @media (min-width: @desktop-width) {

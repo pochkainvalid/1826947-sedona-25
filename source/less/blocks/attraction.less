@@ -4,7 +4,7 @@
 
   @media (min-width: @tablet-width) {
     max-width: 256px;
-    padding: 39px 31px 35px 31px;
+    padding: 35px 31px 31px 31px;
   }
 
   @media (min-width: @desktop-width) {
@@ -35,13 +35,17 @@
   font-size: 18px;
   margin: 0;
   margin-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .attractions__attraction--deployed .attraction__title {
   color: rgba(255, 255, 255, 1);
 
   @media (min-width: @tablet-width) {
-    max-width: 128px;
+    max-width: 150px;
   }
 }
 
@@ -86,7 +90,6 @@
   width: 320px;
   height: 260px;
   background-repeat: no-repeat;
-  background-size: 520px 260px;
 
   &--devil-bridge {
     @media (min-width: @tablet-width) {

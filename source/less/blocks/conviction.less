@@ -52,13 +52,33 @@
 .conviction__video {
   width: 280px;
   height: 177px;
+  background-image: url("../img/video-preview/video-preview.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 288px 177px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/video-preview/video-preview@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     width: 648px;
     height: 500px;
+    background-image: url("../img/video-preview/video-preview--tablet.jpg");
+    background-size: 648px 500px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-preview/video-preview@2x--tablet.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 800px;
+    background-image: url("../img/video-preview/video-preview--desktop.jpg");
+    background-size: 800px 500px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-preview/video-preview@2x--desktop.jpg");
+    }
   }
 }
