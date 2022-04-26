@@ -9,6 +9,9 @@
 
   @media (min-width: @desktop-width) {
     min-height: 152px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &--small-square {
@@ -35,18 +38,19 @@
 
     @media (min-width: @desktop-width) {
       max-width: 300px;
-      padding: 43px 50px 62px 50px;
+      padding: 43px 57px 62px 58px;
     }
   }
 
   &--beautiful-road {
-    padding: 24px 41px 24px 41px;
+    padding: 25px 41px 26px 41px;
 
     &::after {
       content: "";
       display: block;
       position: absolute;
       bottom: 0;
+      left: 18px;
       width: 284px;
       height: 1px;
       background-color: rgba(214, 214, 214, 1);
@@ -58,30 +62,31 @@
 
     @media (min-width: @tablet-width) {
       max-width: 148px;
-      padding: 46px 54px;
+      padding: 42px 54px 42px 54px;
     }
 
     @media (min-width: @desktop-width) {
       max-width: 292px;
-      padding: 42px 54px 62px 54px;
+      padding: 42px 63px 62px 62px;
     }
   }
 
   &--few-tourists {
-    padding: 24px 31px 26px 31px;
+    padding: 27px 31px 26px 31px;
 
     @media (min-width: @tablet-width) {
-      max-width: 135px;
-      padding: 46px 60px 46px 61px;
+      max-width: 146px;
+      padding: 42px 54px 42px 56px;
     }
 
     @media (min-width: @desktop-width) {
       max-width: 290px;
-      padding: 42px 55px 62px 55px;
+      padding: 42px 63px 62px 62px;
     }
   }
 
-  &--deployed {
+  &--real-city,
+  &--devil-bridge {
     display: flex;
     flex-direction: column;
 

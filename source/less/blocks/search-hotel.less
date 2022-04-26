@@ -2,6 +2,11 @@
   font-size: 21px;
   margin: 0;
   margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
 }
 
 .search-hotel__description {
@@ -13,7 +18,7 @@
   margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 41px;
+    margin-bottom: 43px;
   }
 
   @media (min-width: @desktop-width) {
@@ -26,11 +31,19 @@
 
   @media (min-width: @tablet-width) {
     padding: 15px 121px 17px 121px;
+    min-width: 216px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 216px;
-    padding: 16px 136px 17px 136px;
     align-self: center;
+  }
+}
+
+.search-hotel__line-break {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
   }
 }
