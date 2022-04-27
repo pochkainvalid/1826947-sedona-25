@@ -8,8 +8,6 @@
     <link rel="icon" href="favicon.ico"> <!--32x32-->
   </head>
   <body>
-    <svg style="display: none">
-    </svg>
     <div class="page-wrapper">
       <header class="main-header">
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -58,9 +56,9 @@
               <p class="attraction__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <picture class="attraction__photo">
-              <source media="(min-width: 1200px)" srcset="img/attractions/real-city--desktop.jpg 1x, img/attractions/real-city@2x--desktop.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/attractions/real-city--tablet.jpg 1x, img/attractions/real-city@2x--tablet.jpg 2x">
-              <img src="img/attractions/real-city.jpg" srcset="img/attractions/real-city@2x.jpg 2x" alt="Город Седона">
+              <source media="(min-width: 1200px)" srcset="img/attractions/real-city--desktop.jpg 1x, img/attractions/real-city@2x--desktop.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/attractions/real-city--tablet.jpg 1x, img/attractions/real-city@2x--tablet.webp 2x">
+              <img src="img/attractions/real-city.jpg" srcset="img/attractions/real-city@2x.webp 2x" alt="Город Седона">
             </picture>
             <ul class="attraction__advantages advantages">
               <li class="advantages__item advantages__item--residence">
@@ -84,9 +82,9 @@
               <p class="attraction__description">Да, по нему можно пройти! Eсли вы осмелитесь, конечно</p>
             </div>
             <picture class="attraction__photo attraction__photo--devil-bridge">
-              <source media="(min-width: 1200px)" srcset="img/attractions/devil-bridge--desktop.jpg 1x, img/attractions/devil-bridge@2x--desktop.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/attractions/devil-bridge--tablet.jpg 1x, img/attractions/devil-bridge@2x--tablet.jpg 2x">
-              <img src="img/attractions/devil-bridge.jpg" srcset="img/attractions/devil-bridge@2x.jpg 2x" alt="Мост Дьявола">
+              <source media="(min-width: 1200px)" srcset="img/attractions/devil-bridge--desktop.jpg 1x, img/attractions/devil-bridge@2x--desktop.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/attractions/devil-bridge--tablet.jpg 1x, img/attractions/devil-bridge@2x--tablet.webp 2x">
+              <img src="img/attractions/devil-bridge.jpg" srcset="img/attractions/devil-bridge@2x.webp 2x" alt="Мост Дьявола">
             </picture>
           </li>
           <li class="attractions__attraction attraction attractions__attraction--small-square">
@@ -112,9 +110,9 @@
         </section>
         <div class="main__location location">
           <picture class="location__map">
-            <source media="(min-width: 1200px)" srcset="img/map/map--desktop.jpg 1x, img/map/map@2x--desktop.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/map/map--tablet.jpg 1x, img/map/map@2x--tablet.jpg 2x">
-          <img class="location__map" src="img/map/map.jpg" srcset="img/map/map@2x.jpg 2x" width="320" height="350" alt="">
+            <source media="(min-width: 1200px)" srcset="img/map/map--desktop.jpg 1x, img/map/map@2x--desktop.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/map/map--tablet.jpg 1x, img/map/map@2x--tablet.webp 2x">
+          <img class="location__map" src="img/map/map.jpg" srcset="img/map/map@2x.webp 2x" width="320" height="350" alt="">
           </picture>
         </div>
       </main>
@@ -141,8 +139,8 @@
           <a class="copyright__link" href="https://htmlacademy.ru">
             <p class="copyright__developed">Разработано</p>
             <span class="visually-hidden">HTML Academy</span>
-            <svg class="copyright__logo" width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z"/>
+            <svg class="copyright__logo" width="27" height="35">
+              <use href="img/sprite.svg#copyright-logo"></use>
             </svg>
           </a>
         </div>
