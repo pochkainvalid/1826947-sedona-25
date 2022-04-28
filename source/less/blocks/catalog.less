@@ -14,12 +14,20 @@
   background-repeat: no-repeat;
   position: relative;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro/sedona-background@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     height: 290px;
     margin: 0;
     background-image: url("../img/intro/sedona-background--tablet.jpg");
     background-size: 768px 290px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro/sedona-background@2x--tablet.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -27,6 +35,10 @@
     background-image: url("../img/intro/sedona-background--desktop.jpg");
     background-size: 1200px 518px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro/sedona-background@2x--desktop.jpg");
+    }
   }
 }
 

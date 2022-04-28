@@ -1,8 +1,10 @@
 .copyright__link {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
+  padding-right: 95px;
+  padding-left: 80px;
 
   &:hover {
     .copyright__developed {
@@ -23,10 +25,14 @@
       fill: rgba(179, 179, 179, 1);
     }
   }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .copyright__developed {
-  min-width: 121px;
+  min-width: 118px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
