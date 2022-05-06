@@ -73,6 +73,22 @@
   background-color: rgba(242, 242, 242, 1);
   border: 0;
 
+  &:hover {
+    background-color: rgba(229, 229, 229, 1);
+  }
+
+  &:active {
+    height: 18px;
+    padding: 16px 12px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 4px solid rgba(229, 229, 229, 1);
+  }
+
+  &:focus {
+    background-color: rgba(229, 229, 229, 1);
+    outline: none;
+  }
+
   @media (min-width: @desktop-width) {
     width: 398px;
   }
@@ -83,6 +99,10 @@
   .fieldset__placeholder {
     width: 190px;
     padding-right: 74px;
+
+    &:active {
+      padding: 16px 70px 16px 12px;
+    }
   }
 }
 

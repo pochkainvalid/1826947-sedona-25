@@ -81,6 +81,16 @@
   padding-bottom: 12px;
   text-transform: uppercase;
 
+  &:focus {
+    background-color: rgba(102, 158, 192, 1);
+    outline: none;
+
+    @media (min-width: @tablet-width) {
+      color: rgba(129, 179, 210, 1);
+      background-color: inherit;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 14px;
     line-height: 21px;

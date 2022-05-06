@@ -160,12 +160,18 @@
   flex-direction: column;
   padding-top: 36px;
   padding-bottom: 28px;
-  border-bottom: 1px solid rgba(229, 229, 229, 1);
+
+  &--form {
+    border-bottom: 1px solid rgba(229, 229, 229, 1);
+
+    @media (min-width: @tablet-width) {
+      border: none;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     align-self: center;
     padding: 64px 166px 102px 167px;
-    border: none;
   }
 
   @media (min-width: @desktop-width) {
