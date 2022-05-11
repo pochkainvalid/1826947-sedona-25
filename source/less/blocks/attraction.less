@@ -1,15 +1,14 @@
-.attractions__attraction--deployed .attraction__wrapper:first-child {
-  padding-top: 54px;
-  padding-bottom: 40px;
+.attractions__attraction--deployed:first-child .attraction__wrapper {
+  padding: 51px 22px 40px 16px;;
 
   @media (min-width: @tablet-width) {
     max-width: 256px;
-    padding: 35px 31px 31px 31px;
+    padding: 40px 31px 31px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 262px;
-    padding: 39px 69px 35px 69px;
+    padding: 48px 69px 35px 69px;
   }
 }
 
@@ -23,11 +22,11 @@
 
   @media (min-width: @tablet-width) {
     max-width: 256px;
-    padding: 39px 31px 35px 31px;
+    padding: 43px 31px 35px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 39px 72px 35px 72px;
+    padding: 52px 95px 35px 91px;
   }
 }
 
@@ -38,6 +37,12 @@
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 150px;
+    margin: 0 auto 13px;
   }
 }
 
@@ -82,8 +87,20 @@
   }
 }
 
+.attraction__break {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block
+  }
+}
+
 .attraction__number {
   margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .attraction__photo {
@@ -112,10 +129,10 @@
   flex-direction: column;
   list-style-type: none;
   margin: 0;
-  padding: 23px 18px 52px 18px;
+  padding: 31px 18px 52px 18px;
   color: rgba(0, 0, 0, 1);
   background-color: rgba(255, 255, 255, 1);
-  gap: 22px;
+  gap: 30px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;

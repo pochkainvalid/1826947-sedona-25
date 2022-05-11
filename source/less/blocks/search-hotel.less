@@ -2,6 +2,11 @@
   font-size: 21px;
   margin: 0;
   margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
 }
 
 .search-hotel__description {
@@ -13,11 +18,17 @@
   margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 41px;
+    margin-bottom: 43px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 46px;
+  }
+}
+
+.search-hotel__break {
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
 }
 

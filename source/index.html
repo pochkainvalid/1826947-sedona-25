@@ -6,6 +6,8 @@
     <title>HTML Academy: Седона</title>
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico"> <!--32x32-->
+    <link rel="preload" href="img/intro/welcome-background.jpg" as="image">
+    <link rel="preload" href="img/intro/welcome-background@2x.jpg" as="image">
   </head>
   <body>
     <div class="page-wrapper">
@@ -45,7 +47,7 @@
           </picture>
         </div>
         <div class="main__introduction introduction">
-          <h2 class="introduction__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <h2 class="introduction__title">Седона — небольшой<br class="introduction__break introduction__break--mobile"> городок в Аризоне,<br class="introduction__break"> заслуживающий большего!</h2>
           <p class="introduction__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
         <ol class="main__attractions attractions">
@@ -58,7 +60,7 @@
             <picture class="attraction__photo">
               <source media="(min-width: 1200px)" srcset="img/attractions/real-city--desktop.jpg 1x, img/attractions/real-city@2x--desktop.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/attractions/real-city--tablet.jpg 1x, img/attractions/real-city@2x--tablet.jpg 2x">
-              <img src="img/attractions/real-city.jpg" srcset="img/attractions/real-city@2x.jpg 2x" alt="Город Седона">
+              <img src="img/attractions/real-city.jpg" srcset="img/attractions/real-city@2x.jpg 2x" loading="lazy" alt="Город Седона">
             </picture>
             <ul class="attraction__advantages advantages">
               <li class="advantages__item advantages__item--residence">
@@ -67,11 +69,11 @@
               </li>
               <li class="advantages__item advantages__item--food">
                 <h3 class="advantages__title">Еда</h3>
-                <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="advantages__description">Всегда заказывайте фирменный бургер,<br class="advantages__break"> вы не разочаруетесь!</p>
               </li>
               <li class="advantages__item advantages__item--souvenirs">
                 <h3 class="advantages__title">Сувениры</h3>
-                <p class="advantages__description">Не только китайского, но и местного производства!</p>
+                <p class="advantages__description">Не только китайского,<br class="advantages__break"> но и местного производства!</p>
               </li>
             </ul>
           </li>
@@ -79,12 +81,12 @@
             <div class="attraction__wrapper">
               <h3 class="attraction__title">Там есть мост Дьявола</h3>
               <p class="attraction__number">— №2 —</p>
-              <p class="attraction__description">Да, по нему можно пройти, если вы осмелитесь, конечно</p>
+              <p class="attraction__description">Да, по нему можно пройти!<br class="attraction__break"> Eсли вы осмелитесь, конечно</p>
             </div>
             <picture class="attraction__photo attraction__photo--devil-bridge">
               <source media="(min-width: 1200px)" srcset="img/attractions/devil-bridge--desktop.jpg 1x, img/attractions/devil-bridge@2x--desktop.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/attractions/devil-bridge--tablet.jpg 1x, img/attractions/devil-bridge@2x--tablet.jpg 2x">
-              <img src="img/attractions/devil-bridge.jpg" srcset="img/attractions/devil-bridge@2x.jpg 2x" alt="Мост Дьявола">
+              <img src="img/attractions/devil-bridge.jpg" srcset="img/attractions/devil-bridge@2x.jpg 2x" loading="lazy" alt="Мост Дьявола">
             </picture>
           </li>
           <li class="attractions__attraction attraction attractions__attraction--small-square">
@@ -105,7 +107,7 @@
         </ol>
         <section class="main__search-hotel search-hotel">
           <h2 class="search-hotel__title">Заинтересовались?</h2>
-          <p class="search-hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="search-hotel__description">Укажите предполагаемые даты поездки,<br class="search-hotel__break"> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="search-hotel__button button">Найти гостиницу</a>
         </section>
         <div class="main__location location">

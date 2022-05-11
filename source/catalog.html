@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Седона</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico"> <!--32x32-->
+  <link rel="preload" href="img/intro/sedona-background.jpg" as="image">
 </head>
 <body>
   <div class="page-wrapper">
@@ -55,7 +56,7 @@
           <picture class="photos__photo">
             <source media="(min-width: 1200px)" srcset="img/photo-catalog/not-native-spaces--desktop.jpg 1x, img/photo-catalog/not-native-spaces@2x--desktop.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-catalog/not-native-spaces--tablet.jpg 1x, img/photo-catalog/not-native-spaces@2x--tablet.jpg 2x">
-            <img src="img/photo-catalog/not-native-spaces.jpg" srcset="img/photo-catalog/not-native-spaces@2x.jpg 2x" alt="">
+            <img src="img/photo-catalog/not-native-spaces.jpg" srcset="img/photo-catalog/not-native-spaces@2x.jpg 2x" loading="lazy" alt="">
           </picture>
           <div class="photos__info">
             <div class="photos__description">
@@ -69,7 +70,7 @@
           <picture class="photos__photo">
             <source media="(min-width: 1200px)" srcset="img/photo-catalog/local-vegetation--desktop.jpg 1x, img/photo-catalog/local-vegetation@2x--desktop.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-catalog/local-vegetation--tablet.jpg 1x, img/photo-catalog/local-vegetation@2x--tablet.jpg 2x">
-            <img src="img/photo-catalog/local-vegetation.jpg" srcset="img/photo-catalog/local-vegetation@2x.jpg 2x" alt="">
+            <img src="img/photo-catalog/local-vegetation.jpg" srcset="img/photo-catalog/local-vegetation@2x.jpg 2x" loading="lazy" alt="">
           </picture>
           <div class="photos__info">
             <div class="photos__description">
@@ -83,7 +84,7 @@
           <picture class="photos__photo">
             <source media="(min-width: 1200px)" srcset="img/photo-catalog/road-to-north.jpg 1x, img/photo-catalog/road-to-north@2x--desktop.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-catalog/road-to-north.jpg 1x, img/photo-catalog/road-to-north@2x--tablet.jpg 2x">
-            <img src="img/photo-catalog/road-to-north.jpg" srcset="img/photo-catalog/road-to-north@2x.jpg 2x" alt="">
+            <img src="img/photo-catalog/road-to-north.jpg" srcset="img/photo-catalog/road-to-north@2x.jpg 2x" loading="lazy" alt="">
           </picture>
           <div class="photos__info">
             <div class="photos__description">
@@ -97,7 +98,7 @@
           <picture class="photos__photo">
             <source media="(min-width: 1200px)" srcset="img/photo-catalog/devil-bridge--desktop.jpg 1x, img/photo-catalog/devil-bridge@2x--desktop.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-catalog/devil-bridge--tablet.jpg 1x, img/photo-catalog/devil-bridge@2x--tablet.jpg 2x">
-            <img src="img/photo-catalog/devil-bridge.jpg" srcset="img/photo-catalog/devil-bridge@2x.jpg 2x" alt="">
+            <img src="img/photo-catalog/devil-bridge.jpg" srcset="img/photo-catalog/devil-bridge@2x.jpg 2x" loading="lazy" alt="">
           </picture>
           <div class="photos__info">
             <div class="photos__description">
@@ -111,7 +112,7 @@
       <div class="catalog__conviction conviction">
         <h2 class="conviction__title">Все еще сомневаетесь?</h2>
         <p class="conviction__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подоражали в очередной раз!</p>
-        <div class="conviction__video-wrapper">
+        <div class="conviction__video-wrapper" loading="lazy">
           <button class="conviction__play" type="button"></button>
           <video class="conviction__video"></video>
         </div>
