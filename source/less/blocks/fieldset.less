@@ -49,16 +49,46 @@
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    max-width: 240px;
+    max-width: 278px;
     padding: 0;
+    font-size: 21px;
+    margin-left: 20px;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 32px;
   }
 }
 
 .form__feedback .fieldset__title {
+  padding-top: 22px;
+
   @media (min-width: @tablet-width) {
     min-width: 308px;
     padding: 0;
+    margin-left: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 45px;
+  }
+}
+
+.form__fieldset--visited .fieldset__title {
+  @media (min-width: @tablet-width) {
+    margin-left: -19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    margin-bottom: 60px;
+  }
+}
+
+.fieldset__description {
+  margin: 0;
+  margin-left: 17px;
 }
 
 .fieldset__placeholder {
@@ -100,6 +130,10 @@
     width: 190px;
     padding-right: 74px;
 
+    @media (min-width: @desktop-width) {
+      width: 313px;
+    }
+
     &:active {
       padding: 16px 70px 16px 12px;
     }
@@ -116,33 +150,37 @@
     flex-wrap: wrap;
     max-width: 576px;
     gap: 16px;
-    padding: 0 36px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 100%;
     padding: 0;
+    gap: 28px;
   }
 
   &--landmark {
     @media (min-width: @tablet-width) {
       max-width: 480px;
-      padding: 0 84px;
-      column-gap: 32px;
+      column-gap: 72px;
     }
 
     @media (min-width: @desktop-width) {
       max-width: 100%;
       column-gap: 64px;
       padding: 0;
-    }
-  }
-}
 
-.fieldset__list--landmark .fieldset__item {
-  @media (min-width: @tablet-width) {
-    min-width: 184px;
-    min-height: 26px;
+      &:first-of-type {
+        min-width: 172px;
+      }
+
+      &:nth-of-type(2) {
+        min-width: 170px;
+      }
+
+      &:nth-of-type(3) {
+        min-width: 153px;
+      }
+    }
   }
 }
 
@@ -153,9 +191,20 @@
 
   &:last-child {
     margin: 0;
+
+    @media (min-width: @desktop-width) {
+      min-width: 238px;
+    }
   }
 
   @media (min-width: @tablet-width) {
     margin: 0;
+  }
+}
+
+.fieldset__list--landmark .fieldset__item {
+  @media (min-width: @tablet-width) {
+    min-width: 184px;
+    min-height: 26px;
   }
 }

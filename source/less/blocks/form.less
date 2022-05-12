@@ -5,13 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 48px;
-    justify-content: space-around;
     position: relative;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: 56px;
   }
 }
 
@@ -34,10 +28,25 @@
     align-items: center;
   }
 
-  .form__fieldset,
-  .form__item {
+  .form__fieldset {
     @media (min-width: @tablet-width) {
       border-top: 1px solid rgba(219, 219, 219, 1);
+      padding: 0 96px 48px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 960px;
+      padding: 0 120px 73px;
+    }
+  }
+
+  .form__fieldset--visited {
+    @media (min-width: @tablet-width) {
+      padding: 0 144px 18px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 62px;
     }
   }
 }
@@ -47,28 +56,30 @@
   flex-direction: column;
   border: 0;
   margin: 0;
-  padding: 0 20px 34px 20px;
+  padding: 0 20px 23px;
   align-items: flex-start;
   border-bottom: 1px solid rgba(229, 229, 229, 1);
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 58px;
+    padding: 0 43px 48px 60px;
     border: none;
     align-items: center;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0;
-    padding-bottom: 56px;
+    padding: 0 63px 55px 120px;
+  }
+
+  &:last-of-type {
+    @media (min-width: @tablet-width) {
+      padding: 0 60px 48px 44px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 0 120px 55px 64px;
+    }
   }
 }
-
-.form__feedback .form__fieldset {
-  @media (min-width: @desktop-width) {
-    width: 960px;
-  }
-}
-
 
 .form__list {
   margin: 0;
@@ -77,6 +88,7 @@
 
 .form__title {
   margin-bottom: 20px;
+  padding-top: 25px;
 
   @media (min-width: @tablet-width) {
     min-width: 402px;
@@ -89,12 +101,12 @@
   border: 0;
   margin: 0;
   padding: 0;
-  padding-bottom: 56px;
+  padding-bottom: 50px;
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    padding-bottom: 48px;
+    padding-bottom: 40px;
   }
 }
 
@@ -144,9 +156,10 @@
   @media (min-width: @tablet-width) {
     width: 324px;
     margin: 0;
+    padding: 18px 60px 14px 49px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     width: 384px;
   }
 }
@@ -161,6 +174,8 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    margin-top: 8px;
     align-self: center;
+    font-size: 14px;
   }
 }
