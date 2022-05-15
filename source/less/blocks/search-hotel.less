@@ -37,11 +37,19 @@
 
   @media (min-width: @tablet-width) {
     padding: 15px 121px 17px 121px;
+    min-width: 216px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 216px;
-    padding: 16px 136px 17px 136px;
     align-self: center;
+  }
+}
+
+.search-hotel__line-break {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
   }
 }

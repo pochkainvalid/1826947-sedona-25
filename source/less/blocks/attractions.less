@@ -9,6 +9,9 @@
 
   @media (min-width: @desktop-width) {
     min-height: 152px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &--small-square {
@@ -36,7 +39,7 @@
 
     @media (min-width: @desktop-width) {
       max-width: 300px;
-      padding: 43px 50px 62px 50px;
+      padding: 42px 57px 62px 58px;
     }
   }
 
@@ -65,7 +68,7 @@
 
     @media (min-width: @desktop-width) {
       max-width: 292px;
-      padding: 42px 54px 62px 54px;
+      padding: 42px 63px 62px 62px;
     }
   }
 
@@ -79,11 +82,12 @@
 
     @media (min-width: @desktop-width) {
       max-width: 290px;
-      padding: 42px 55px 62px 55px;
+      padding: 42px 63px 62px 62px;
     }
   }
 
-  &--deployed {
+  &--real-city,
+  &--devil-bridge {
     display: flex;
     flex-direction: column;
 
