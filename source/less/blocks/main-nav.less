@@ -35,30 +35,6 @@
 
   @media (min-width: @tablet-width) {
     background-color: rgba(255, 255, 255, 1);
-
-    &.site-list {
-      max-width: 241px;
-      margin-left: 50px;
-      column-gap: 75px;
-
-      @media (min-width: @desktop-width) {
-        max-width: 507px;
-        margin-left: 91px;
-        column-gap: 162px;
-      }
-    }
-
-    &.feedback-list {
-      max-width: 292px;
-      margin-right: 29px;
-      column-gap: 52px;
-
-      @media (min-width: @desktop-width) {
-        max-width: 508px;
-        margin-right: 71px;
-        column-gap: 139px;
-      }
-    }
   }
 }
 
@@ -145,5 +121,22 @@
 
   .main-nav__toggle {
     display: none;
+  }
+}
+
+.main-nav--closed .main-header__logo {
+  display: block;
+}
+
+.main-nav--opened,
+.main-nav--nojs {
+  .main-header__logo {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-header__logo {
+  @media (min-width: @tablet-width) {
+    display: block;
   }
 }

@@ -3,10 +3,13 @@
   margin-bottom: 35px;
   font-size: 18px;
   max-width: 262px;
+  padding-left: 10px;
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
     margin-bottom: 29px;
+    min-width: 520px;
+    padding-left: 0;
   }
 }
 
@@ -19,12 +22,6 @@
   }
 }
 
-.introduction__break--mobile {
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
 .introduction__description {
   color: rgba(51, 51, 51, 1);
   margin: 0;
@@ -33,15 +30,19 @@
   line-height: 21px;
 }
 
-.main__introduction--form .introduction__title {
-  margin-bottom: 23px;
-
-  @media (min-width: @tablet-width) {
+.main__introduction--form  {
+  .introduction__title {
     margin-bottom: 23px;
-    font-size: 30px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 23px;
+      font-size: 30px;
+      min-width: 435px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 32px;
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    margin-bottom: 32px;
-  }
 }

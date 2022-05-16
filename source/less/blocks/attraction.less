@@ -30,21 +30,57 @@
   }
 }
 
-.attractions__attraction--real-city .attraction__wrapper {
-  padding: 50px 22px 40px 16px;
+.attractions__attraction--real-city {
+  .attraction__wrapper {
+    padding: 51px 20px 40px 18px;
+    color: rgba(255, 255, 255, 1);
+
+    @media (min-width: @tablet-width) {
+      max-width: 192px;
+      padding: 40px 32px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 295px;
+      padding: 47px 55px 58px;
+    }
+  }
+
+  .attraction__number {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .attraction__description {
+    color: rgba(255, 255, 255, 1);
+  }
 }
 
 .attractions__attraction--devil-bridge {
   .attraction__wrapper {
     padding: 40px 16px 35px 15px;
+    color: rgba(255, 255, 255, 1);
 
     @media (min-width: @tablet-width) {
-      padding: 43px 33px 31px 29px;
+      max-width: 184px;
+      padding: 43px 36px 31px;
     }
 
     @media (min-width: @desktop-width) {
-      padding: 50px 85px 55px 85px;
+      max-width: 243px;
+      padding: 50px 93px 55px;
     }
+  }
+
+  .attraction__title {
+    @media (min-width: @desktop-width) {
+      max-width: 243px;
+      margin: 0;
+      margin-bottom: 13px;
+    }
+  }
+
+  .attraction__number {
+    color: rgba(255, 255, 255, 1);
   }
 
   .attraction__description {
@@ -91,7 +127,7 @@
 
 
   @media (min-width: @desktop-width) {
-    max-width: 275px;
+    max-width: 290px;
   }
 }
 
@@ -100,6 +136,12 @@
 
   @media (min-width: @desktop-width) {
     display: block;
+  }
+
+  &--title {
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
   }
 }
 

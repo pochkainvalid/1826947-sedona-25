@@ -12,6 +12,11 @@
   }
 
   &--first {
+    @media (min-width: @tablet-width) {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+
     .photos__photo {
       @media (min-width: @tablet-width) {
         width: 648px;
@@ -115,6 +120,7 @@
 .photos__like {
   position: relative;
   border: 0;
+  font-family: "PT Sans";
   color: rgb(0, 0, 0, 1);
   background-color: initial;
   font-weight: 700;
