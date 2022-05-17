@@ -3,11 +3,22 @@
   margin-bottom: 35px;
   font-size: 18px;
   max-width: 262px;
+  padding-left: 10px;
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
     margin-bottom: 29px;
-    max-width: 520px;
+    min-width: 520px;
+    padding-left: 0;
+  }
+}
+
+.catalog__introduction .introduction__title {
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    margin-bottom: 33px;
   }
 }
 
@@ -17,9 +28,20 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  max-width: 282px;
+}
 
-  @media (min-width: @tablet-width) {
-    max-width: 520px;
+.main__introduction--form {
+  .introduction__title {
+    margin-bottom: 23px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 23px;
+      font-size: 30px;
+      min-width: 435px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 32px;
+    }
   }
 }

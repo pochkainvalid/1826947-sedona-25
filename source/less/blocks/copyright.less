@@ -1,10 +1,15 @@
+.copyright__logo {
+  align-self: center;
+  margin: 0;
+  fill: rgba(0, 0, 0, 1);
+}
+
 .copyright__link {
   display: flex;
-  justify-content: space-between;
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
   padding-right: 95px;
-  padding-left: 80px;
+  padding-left: 96px;
 
   &:hover {
     .copyright__developed {
@@ -26,6 +31,18 @@
     }
   }
 
+  &:focus {
+    outline: none;
+
+    .copyright__developed {
+      color: rgba(129, 179, 210, 1);
+    }
+
+    .copyright__logo {
+      fill: rgba(129, 179, 210, 1);
+    }
+  }
+
   @media (min-width: @tablet-width) {
     padding: 0;
   }
@@ -38,10 +55,7 @@
   line-height: 21px;
   align-self: center;
   margin: 0;
-}
-
-.copyright__logo {
-  align-self: center;
-  margin: 0;
-  fill: rgba(0, 0, 0, 1);
+  margin-left: -14px;
+  margin-right: -5px;
+  padding-right: 3px;
 }

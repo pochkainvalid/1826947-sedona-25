@@ -28,7 +28,7 @@
     bottom: 0;
     width: 100%;
     height: 57px;
-    background-image: url("../img/intro/welcome-decoration.jpg");
+    background-image: url("../img/intro/welcome-decoration.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -144,7 +144,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    height: 518px;
+    height: 300px;
     background-image: url("../img/intro/sedona-background--desktop.jpg");
     background-size: 1200px 518px;
     background-repeat: no-repeat;
@@ -170,17 +170,29 @@
 .main__introduction {
   display: flex;
   flex-direction: column;
-  padding: 34px 21px 5px 18px;
-  align-items: center;
+  padding: 34px 20px 5px 18px;
 
   @media (min-width: @tablet-width) {
     align-self: center;
-    padding: 48px 124px 56px 124px;
-    border: none;
+    padding: 48px 124px 56px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 60px 358px 45px 357px;
+    padding: 60px 359px 44px 357px;
+  }
+
+  &--form {
+    border-bottom: 1px solid rgba(229, 229, 229, 1);
+    padding: 37px 20px 28px 18px;
+
+    @media (min-width: @tablet-width) {
+      border: none;
+      padding: 64px 166px 105px 167px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 114px 383px 70px 382px;
+    }
   }
 }
 
