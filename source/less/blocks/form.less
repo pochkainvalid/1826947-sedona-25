@@ -30,7 +30,7 @@
 
   .form__fieldset {
     @media (min-width: @tablet-width) {
-      border-top: 1px solid rgba(219, 219, 219, 1);
+      position: relative;
       padding: 0 96px 48px;
     }
 
@@ -211,5 +211,29 @@
     margin-top: 8px;
     align-self: center;
     font-size: 14px;
+  }
+}
+
+// Настройка положения специально для Mozilla Firefox
+
+@-moz-document url-prefix() {
+  .form__item {
+    padding-bottom: 52px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 44px;
+    }
+  }
+
+  .form__title {
+    margin-left: 52px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 120px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 180px;
+    }
   }
 }
